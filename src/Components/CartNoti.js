@@ -1,14 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import CartIcon from "./CartIcon";
+import { useSelector } from "react-redux";
 
-export default function CartNoti({ itemCount }) {
+export default function CartNoti() {
+  const items = useSelector((store) => store.cartReducer);
   const history = useHistory();
+
   return (
     <Icon onClick={() => history.push("/cart")}>
       <ItemCount>
-        <span>{itemCount}</span>
+        <span>{items.length}</span>
       </ItemCount>
       <CartIcon width="32" height="32" />
     </Icon>

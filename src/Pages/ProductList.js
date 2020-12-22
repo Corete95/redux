@@ -84,7 +84,7 @@ const CART_ITEM = [
   },
   {
     isChecked: true,
-    product_name: "르아브 미니멀리즘 네이비 블루 셔츠",
+    product_name: "르아브 미니멀리즘 네이비 블루 셔츠 KET504",
     product_id: 4204,
     product_img: "/images/blueShirts.png",
     price: 43250,
